@@ -4,9 +4,6 @@ body {
     width: 100%;
 }
     /* "navigation-bar" */
-.nav-bar {
-    width: 100%;
-}
 
 .logo a {
     text-transform: uppercase;
@@ -116,7 +113,7 @@ body {
 .btn-intro-position {
     display: inline-block;
     float: right;
-    padding-right: 520px;
+    margin-right: 75%;
     margin-top: 15px;
 }
 .btn-get-started {
@@ -515,18 +512,62 @@ footer {
     transition: 1s;
 }
 
-/* small screens */
-@media (min-width: 320px) and (max-width: 720px) {
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 960px) {
     .intro, .some_text, .col-7, .col-5, footer, .feedback, .photo-lines {
-        width: 900px;
+        width: 960px;
     }
     .feedback {
-    height: 100%;
+        height: 100%;
     }
     .photo-row {
-        width: 100%;
+        width: 960px;
+        height: auto;
     }
     .pic-one, .pic-four, .pic-five, .pic-two, .pic-three, .pic-six  {
         width: 100%;
+        height: 44vm;
     }
 }
+
+
+@media (min-width: 960px) and (max-width: 1440px) {
+    .intro, .some_text,  footer, .feedback, .photo-lines {
+        width: 1440px;
+    }
+    .photo-row {
+        width: 1440px;
+        height: auto;
+    }
+    .btn-intro-position {
+        margin-right: 42%;
+    }
+}
+
+@media (min-width: 1450px) and (max-width: 2880px) {
+    .intro, .some_text, footer, .feedback, .photo-lines {
+        width: 2880px;
+    }
+
+    .photo-row {
+        width: 2880px;
+    }
+    .pic-one, .pic-four, .pic-five, .pic-two, .pic-three, .pic-six  {
+        height: 43em;
+    }
+    .btn-intro-position {
+        margin-right: 73%;
+    }
+    .photo-text {
+        top: 250px;
+        left: 180px;
+    }
+.col-7 {
+    padding-left: 18%;
+}
+}
+
